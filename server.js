@@ -395,11 +395,11 @@ app.post('/paymentlink', async (req, res) => {
             if(pendingTx && pendingTx.blockNumber) {
 
                 if(req.body.country == 'NGN') {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
                 } else if(req.body.country == 'USD') {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
                 } else {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
                 } 
 
             }
@@ -421,11 +421,11 @@ app.post('/paymentlink', async (req, res) => {
             if(pendingTx && pendingTx.blockNumber) {
 
                 if(req.body.country == 'NGN') {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
                 } else if(req.body.country == 'USD') {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
                 } else {
-                  res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
+                  res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
                 }     
 
             }
@@ -446,11 +446,11 @@ app.post('/paymentlink', async (req, res) => {
        
         if(req.body.address === from) {
             if(req.body.country == 'NGN') {
-              res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
+              res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&accountbank=${req.body.accountbank}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}`);
             } else if(req.body.country == 'USD') {
-              res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
+              res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}`);
             } else {
-              res.redirect(`http://blokrampp-env.eba-ucsptawd.us-east-1.elasticbeanstalk.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
+              res.redirect(`https://blokramp-api.onrender.com/transfertobank?country=${req.body.country}&bankname=${req.body.bankname}&accountnumber=${req.body.accountnumber}&amount=${req.body.amount}&beneficiaryname=${req.body.beneficiaryname}&BeneficiaryAddress=${req.body.BeneficiaryAddress}&BeneficiaryCountry=${req.body.BeneficiaryCountry}&swiftcode=${req.body.swiftcode}&routingnumber=${req.body.routingnumber}&PostalCode=${req.body.PostalCode}&streetnumber=${req.body.streetnumber}&StreetName=${req.body.StreetName}&city=${req.body.city}`);
             }
         }
 
